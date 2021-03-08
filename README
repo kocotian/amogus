@@ -2,3 +2,20 @@ amogus
 ======
 
 amogus
+
+building and running
+====================
+
+to build this shit, you will need:
+* nasm assembler
+* make (optionally you can assemble this shit manually)
+* cat
+
+write:
+	$ make
+
+and you will get your final, bootable disk image which you can
+boot! to do this, find any medium which can be detected by BIOS
+as bootable (USB pendrive). You can write:
+	# dd if=amogus of=/dev/sdX status=progress
+(/dev/sdX is your drive).
